@@ -1,0 +1,69 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    grid-template-rows: 2fr 2fr 2fr 2fr ;
+    grid-template-areas: 
+    " logo headere headere"
+    "sidebar promo promo"
+    "sidebar news content"
+    "sidebar ads content"
+    ;
+    gap: 10px;
+    font-size: 30px;
+}
+.logo{
+    grid-area: logo;
+    background: orange;
+    padding: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.headere{
+    grid-area: headere;
+    background: lightcoral;
+    padding: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.sidebar{
+    grid-area: sidebar;
+    background: green;
+    padding: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.promo{
+    grid-area: promo;
+    background: rgb(101, 14, 172);
+    padding: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.news{
+    grid-area: news;
+    background: orangered;
+    padding: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.ads{
+    grid-area: ads;
+    background: rgb(177, 57, 97);
+    padding: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.content{
+    grid-area: content;
+    background: rgb(170, 23, 109);
+    padding: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
